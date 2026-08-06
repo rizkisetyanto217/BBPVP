@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami | RestoSehat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --primary-gold: #c5a059; --dark-bg: #0f0f0f; }
+        body { background-color: var(--dark-bg); color: #d1d1d1; font-family: 'Poppins', sans-serif; }
+        h2 { font-family: 'Playfair Display', serif; color: white; }
+        
+        .navbar { background: rgba(15, 15, 15, 0.95); border-bottom: 1px solid #333; backdrop-filter: blur(10px); }
+        .nav-link:hover { color: var(--primary-gold) !important; }
+
+        .contact-card {
+            background: #1a1a1a; border: 1px solid #333; border-radius: 15px; padding: 40px;
+        }
+        .form-control {
+            background-color: #252525; border: 1px solid #444; color: white; padding: 12px;
+        }
+        .form-control:focus {
+            background-color: #2a2a2a; color: white; border-color: var(--primary-gold); box-shadow: none;
+        }
+        .input-group-text {
+            background-color: #333; border: 1px solid #444; color: var(--primary-gold);
+        }
+        
+        .btn-submit {
+            background-color: var(--primary-gold); color: black; font-weight: 600; padding: 12px; border: none; transition: 0.3s;
+        }
+        .btn-submit:hover { background-color: #e0b86d; transform: scale(1.02); }
+
+        footer { background: #151515; padding: 60px 0; border-top: 2px solid var(--primary-gold); }
+        .social-icons a { font-size: 1.5rem; margin: 0 15px; color: white; transition: 0.3s; }
+        .social-icons a:hover { color: var(--primary-gold); }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="index.html">Resto<span class="text-warning">Sehat</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5 py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="contact-card shadow-lg">
+                <div class="text-center mb-5">
+                    <h2 class="display-5">Hubungi Kami</h2>
+                    <p class="text-muted">Punya pertanyaan atau ingin melakukan pemesanan khusus?</p>
+                </div>
+
+                <form action="#" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label small fw-bold">NAMA LENGKAP</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <input type="text" class="form-control" placeholder="Masukkan nama" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label small fw-bold">EMAIL</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                <input type="email" class="form-control" placeholder="nama@email.com" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label small fw-bold">PESAN ANDA</label>
+                        <textarea class="form-control" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit w-100 rounded-pill">
+                        KIRIM PESAN <i class="fas fa-paper-plane ms-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center">
+    <div class="container">
+        <div class="row gy-4 mb-4">
+            <div class="col-md-4">
+                <i class="fas fa-map-marker-alt text-warning mb-2 fa-lg"></i>
+                <h6>ALAMAT</h6>
+                <p class="small text-muted">Jl. Sehat No.1, Kota Sehat</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-clock text-warning mb-2 fa-lg"></i>
+                <h6>JAM BUKA</h6>
+                <p class="small text-muted">08.00 - 20.00</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-phone text-warning mb-2 fa-lg"></i>
+                <h6>TELEPON</h6>
+                <p class="small text-muted">0838-3845-3433</p>
+            </div>
+        </div>
+        <div class="social-icons mb-4">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="text-danger small fw-bold">❤️ Terima Kasih Telah Memilih Makanan Sehat ❤️</p>
+        <hr class="border-secondary my-4">
+        <p class="small text-muted mb-0">&copy; 2026 Resto Sehat. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

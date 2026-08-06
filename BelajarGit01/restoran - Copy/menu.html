@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Sehat | RestoSehat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --primary-gold: #c5a059; --dark-bg: #0f0f0f; }
+        body { background-color: var(--dark-bg); color: #d1d1d1; font-family: 'Poppins', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: white; }
+        
+        .navbar { background: rgba(15, 15, 15, 0.95); border-bottom: 1px solid #333; backdrop-filter: blur(10px); }
+        .nav-link:hover { color: var(--primary-gold) !important; }
+
+        .menu-card { 
+            background: #1a1a1a; border: none; transition: 0.4s; overflow: hidden; height: 100%;
+        }
+        .menu-card:hover { transform: translateY(-10px); }
+        .menu-img { height: 200px; object-fit: cover; transition: 0.5s; }
+        .menu-card:hover .menu-img { scale: 1.1; }
+        
+        .price-tag { color: var(--primary-gold); font-weight: 600; font-size: 1.1rem; }
+        .category-title { border-left: 4px solid var(--primary-gold); padding-left: 15px; margin-bottom: 30px; }
+
+        footer { background: #151515; padding: 60px 0; border-top: 2px solid var(--primary-gold); }
+        .social-icons a { font-size: 1.5rem; margin: 0 15px; color: white; transition: 0.3s; }
+        .social-icons a:hover { color: var(--primary-gold); }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="index.html">Resto<span class="text-warning">Sehat</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5 pt-4">
+    <div class="text-center mb-5">
+        <h1 class="display-4">Daftar Menu</h1>
+        <p class="text-muted">Pilihan nutrisi terbaik untuk tubuh Anda</p>
+    </div>
+
+    <div class="category-title mt-5">
+        <h3 class="text-white"><i class="fas fa-utensils me-2 text-warning"></i> Menu Makanan</h3>
+    </div>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card menu-card shadow">
+                <img src="nasigoreng.jpg" class="card-img-top menu-img" alt="Nasi Goreng">
+                <div class="card-body">
+                    <h5 class="text-white">Nasi Goreng Sehat</h5>
+                    <p class="small text-muted">Nasi goreng rempah tanpa MSG, disajikan dengan telur organik.</p>
+                    <div class="price-tag">Rp 25.000</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card menu-card shadow">
+                <img src="sopsayur.png" class="card-img-top menu-img" alt="Sop Sayur">
+                <div class="card-body">
+                    <h5 class="text-white">Sop Sayur Pelangi</h5>
+                    <p class="small text-muted">Kuah kaldu jamur bening dengan sayuran segar lokal.</p>
+                    <div class="price-tag">Rp 20.000</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card menu-card shadow">
+                <img src="salad.jpg" class="card-img-top menu-img" alt="Salad">
+                <div class="card-body">
+                    <h5 class="text-white">Garden Salad</h5>
+                    <p class="small text-muted">Mix sayur hijau dan buah dengan dressing olive oil.</p>
+                    <div class="price-tag">Rp 18.000</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-title mt-5 pt-4">
+        <h3 class="text-white"><i class="fas fa-glass-water me-2 text-info"></i> Menu Minuman</h3>
+    </div>
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="card menu-card shadow">
+                <img src="esjeruk.jpg" class="card-img-top menu-img" alt="Es Jeruk">
+                <div class="card-body">
+                    <h5 class="text-white">Es Jeruk Murni</h5>
+                    <p class="small text-muted">100% perasan jeruk asli tanpa gula tambahan.</p>
+                    <div class="price-tag">Rp 12.000</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card menu-card shadow">
+                <img src="esteh.jpg" class="card-img-top menu-img" alt="Es Teh">
+                <div class="card-body">
+                    <h5 class="text-white">Es Teh Tawar Premium</h5>
+                    <p class="small text-muted">Seduhan teh pucuk pilihan yang menyegarkan.</p>
+                    <div class="price-tag">Rp 5.000</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card menu-card shadow">
+                <img src="AquaMineral.png" class="card-img-top menu-img" alt="Mineral">
+                <div class="card-body">
+                    <h5 class="text-white">Air Mineral</h5>
+                    <p class="small text-muted">Air mineral kemasan botol dingin atau suhu ruang.</p>
+                    <div class="price-tag">Rp 4.000</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center">
+    <div class="container">
+        <div class="row gy-4 mb-4">
+            <div class="col-md-4">
+                <i class="fas fa-map-marker-alt text-warning mb-2 fa-lg"></i>
+                <h6>ALAMAT</h6>
+                <p class="small text-muted">Jl. Sehat No.1, Kota Sehat</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-clock text-warning mb-2 fa-lg"></i>
+                <h6>JAM BUKA</h6>
+                <p class="small text-muted">08.00 - 20.00</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-phone text-warning mb-2 fa-lg"></i>
+                <h6>TELEPON</h6>
+                <p class="small text-muted">0838-3845-3433</p>
+            </div>
+        </div>
+        <div class="social-icons mb-4">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="text-danger small fw-bold">❤️ Terima Kasih Telah Memilih Makanan Sehat ❤️</p>
+        <hr class="border-secondary my-4">
+        <p class="small text-muted mb-0">&copy; 2026 Resto Sehat. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
