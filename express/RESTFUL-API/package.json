@@ -1,0 +1,28 @@
+{
+  "name": "bbpvp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "belanjaDiskon.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizkisetyanto217/BBPVP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rizkisetyanto217/BBPVP/issues"
+  },
+  "homepage": "https://github.com/rizkisetyanto217/BBPVP#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
