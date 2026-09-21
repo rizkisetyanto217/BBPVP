@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Major {
+  id          Int      @id @default(autoincrement())
+  schoolId    Int?     @map("school_id")
+  kodeJurusan String   @map("kode_jurusan") @db.VarChar(50)
+  namaJurusan String   @map("nama_jurusan") @db.VarChar(100)
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  students    Student[]
+
+  @@unique([schoolId, kodeJurusan])
+  @@map("majors")
+}
+
+model Student {
+  id           Int      @id @default(autoincrement())
+  kodeSiswa    String   @unique @map("kode_siswa") @db.VarChar(50)
+  namaSiswa    String   @map("nama_siswa") @db.VarChar(255)
+  alamatSiswa  String?  @map("alamat_siswa") @db.Text
+  tglSiswa     DateTime? @map("tgl_siswa") @db.Date
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  major        Major?   @relation(fields: [majorId], references: [id])
+  majorId      Int?     @map("major_id")
+
+  @@index([majorId])
+  @@map("students")
+}
